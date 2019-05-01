@@ -11,9 +11,12 @@ namespace Ejercicios
         static void Main(string[] args)
         {
 
-            var stopwatch = new StopWatch();
-            Console.WriteLine(Entrevistas.distanciaTresPuntos(-3, 0, 3, 0, 6, 0));
-            Console.WriteLine(Entrevistas.NumMasPopular(new int[] { 1, 1, 1, 4, 4, 4, 2, 2, 2 }, 4));
+            //var stopwatch = new StopWatch();
+            //Console.WriteLine(Entrevistas.distanciaTresPuntos(-3, 0, 3, 0, 6, 0));
+            Console.WriteLine(Entrevistas.IsAlmostPalindromic("acbcc"));
+            Console.WriteLine(Entrevistas.IsAlmostPalindromic("acbca"));
+            Console.WriteLine(Entrevistas.IsAlmostPalindromic(""));
+            //Console.WriteLine(Entrevistas.MostPopularNum(new int[] { 1, 1, 1, 4, 4, 4, 2, 2, 2 }, 4));
         }
     }
 }
