@@ -43,8 +43,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entrevistas.cs" />
+    <Compile Include="Polymorphism\DbCommand.cs" />
+    <Compile Include="Polymorphism\DbConnection.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Stack.cs" />
     <Compile Include="StopWatch.cs" />
   </ItemGroup>
   <ItemGroup>
