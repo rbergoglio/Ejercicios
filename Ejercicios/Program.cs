@@ -11,13 +11,20 @@ namespace Ejercicios
     {
         static void Main(string[] args)
         {
+            WorkFlow workFlow = new WorkFlow();
+            workFlow.AddActivity(new ChangeStatusVideoProcessing());
+            workFlow.AddActivity(new UploadVideo());
+            workFlow.AddActivity(new SendEmail());
+            WorkFlowEngine workFlowEngine = new WorkFlowEngine(workFlow);
+            workFlowEngine.Run();
+
 
             //var stopwatch = new StopWatch();
             //Console.WriteLine(Entrevistas.distanciaTresPuntos(-3, 0, 3, 0, 6, 0));
             //Console.WriteLine(Entrevistas.IsAlmostPalindromic("acbcc"));
             //Console.WriteLine(Entrevistas.IsAlmostPalindromic("acbca"));
             //Console.WriteLine(Entrevistas.MostPopularNum(new int[] { 1, 1, 1, 4, 4, 4, 2, 2, 2 }, 9));
-            
+            /*
             var stack = new Stack(new CommonStack());
             stack.Push("dddddd");
             stack.Push(DateTime.Now);
@@ -25,7 +32,7 @@ namespace Ejercicios
             Console.WriteLine(stack.Pop());
             Console.WriteLine(stack.Pop());
             Console.WriteLine(stack.Pop());
-            
+            */
             /*
             DbCommand comando = new DbCommand(new SqlConnection("dss"), "instruction" );
             comando.Execute();
